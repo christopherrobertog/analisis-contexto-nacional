@@ -1,0 +1,41 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Node / Next.js
+dashboard/node_modules/
+dashboard/.next/
+dashboard/out/
+node_modules/
+.pnpm-store/
+
+# Variables de entorno y credenciales
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
+*.log
+outputs/logs/*.log
+
+# Vercel
+.vercel/
+
+# Editor
+.vscode/*
+!.vscode/settings.json
+.idea/
+
+# Bases de datos pesadas (mantener solo processed/metadata livianos)
+data/raw/*.parquet
+*.duckdb
+
+# Jupyter checkpoints
+.ipynb_checkpoints/

@@ -1,0 +1,18 @@
+{
+  "name": "analisis-contexto-nacional-global",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Proyecto multiagentico para el analisis del contexto economico nacional y global - Inflacion en Ecuador",
+  "scripts": {
+    "dashboard:install": "npm install --prefix dashboard",
+    "dashboard:dev": "npm run dev --prefix dashboard",
+    "dashboard:build": "npm run build --prefix dashboard",
+    "data:download": "python scripts/download_data.py",
+    "data:clean": "python scripts/clean_data.py",
+    "data:validate": "python scripts/validate_data.py",
+    "data:indicators": "python scripts/calculate_indicators.py",
+    "data:econometrics": "python scripts/econometric_model.py",
+    "report:generate": "python scripts/generate_report.py"
+  },
+  "license": "MIT"
+}
