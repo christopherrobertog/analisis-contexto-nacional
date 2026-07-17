@@ -1,0 +1,27 @@
+[
+  {
+    "pais":"Panamá",
+    "volatilidad_desv_estandar":1.26,
+    "coef_variacion_pct":140.2
+  },
+  {
+    "pais":"Ecuador",
+    "volatilidad_desv_estandar":1.61,
+    "coef_variacion_pct":105.4
+  },
+  {
+    "pais":"América Latina y el Caribe",
+    "volatilidad_desv_estandar":1.79,
+    "coef_variacion_pct":45.5
+  },
+  {
+    "pais":"Perú",
+    "volatilidad_desv_estandar":2.07,
+    "coef_variacion_pct":56.6
+  },
+  {
+    "pais":"Estados Unidos",
+    "volatilidad_desv_estandar":2.18,
+    "coef_variacion_pct":78.8
+  }
+]

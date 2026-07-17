@@ -1,0 +1,47 @@
+[
+  {
+    "pais":"Panamá",
+    "inflacion_promedio":0.9,
+    "inflacion_mediana":0.76,
+    "inflacion_min":-1.55,
+    "inflacion_max":2.86,
+    "desviacion_estandar":1.26,
+    "coeficiente_variacion_pct":140.0
+  },
+  {
+    "pais":"Ecuador",
+    "inflacion_promedio":1.52,
+    "inflacion_mediana":1.55,
+    "inflacion_min":-0.34,
+    "inflacion_max":3.97,
+    "desviacion_estandar":1.61,
+    "coeficiente_variacion_pct":105.9
+  },
+  {
+    "pais":"Estados Unidos",
+    "inflacion_promedio":2.76,
+    "inflacion_mediana":2.13,
+    "inflacion_min":0.12,
+    "inflacion_max":8.0,
+    "desviacion_estandar":2.18,
+    "coeficiente_variacion_pct":79.0
+  },
+  {
+    "pais":"Perú",
+    "inflacion_promedio":3.65,
+    "inflacion_mediana":3.4,
+    "inflacion_min":1.51,
+    "inflacion_max":8.33,
+    "desviacion_estandar":2.07,
+    "coeficiente_variacion_pct":56.7
+  },
+  {
+    "pais":"América Latina y el Caribe",
+    "inflacion_promedio":3.93,
+    "inflacion_mediana":3.4,
+    "inflacion_min":2.5,
+    "inflacion_max":8.81,
+    "desviacion_estandar":1.79,
+    "coeficiente_variacion_pct":45.5
+  }
+]

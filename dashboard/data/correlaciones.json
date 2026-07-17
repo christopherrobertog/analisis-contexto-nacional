@@ -1,0 +1,42 @@
+[
+  {
+    "pais":"América Latina y el Caribe",
+    "n_obs":11,
+    "corr_inflacion_pib":0.54,
+    "p_valor_inflacion_pib":0.087,
+    "corr_inflacion_desempleo":-0.332,
+    "p_valor_inflacion_desempleo":0.318
+  },
+  {
+    "pais":"Ecuador",
+    "n_obs":11,
+    "corr_inflacion_pib":0.213,
+    "p_valor_inflacion_pib":0.529,
+    "corr_inflacion_desempleo":-0.482,
+    "p_valor_inflacion_desempleo":0.133
+  },
+  {
+    "pais":"Estados Unidos",
+    "n_obs":11,
+    "corr_inflacion_pib":0.353,
+    "p_valor_inflacion_pib":0.287,
+    "corr_inflacion_desempleo":-0.437,
+    "p_valor_inflacion_desempleo":0.18
+  },
+  {
+    "pais":"Panamá",
+    "n_obs":11,
+    "corr_inflacion_pib":0.754,
+    "p_valor_inflacion_pib":0.007,
+    "corr_inflacion_desempleo":-0.399,
+    "p_valor_inflacion_desempleo":0.224
+  },
+  {
+    "pais":"Perú",
+    "n_obs":11,
+    "corr_inflacion_pib":0.153,
+    "p_valor_inflacion_pib":0.654,
+    "corr_inflacion_desempleo":-0.004,
+    "p_valor_inflacion_desempleo":0.991
+  }
+]

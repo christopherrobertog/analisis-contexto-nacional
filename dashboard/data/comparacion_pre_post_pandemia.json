@@ -1,0 +1,27 @@
+[
+  {
+    "pais":"América Latina y el Caribe",
+    "2014-2019 (pre-pandemia)":3.11,
+    "2020-2024 (post-pandemia)":4.91
+  },
+  {
+    "pais":"Ecuador",
+    "2014-2019 (pre-pandemia)":1.62,
+    "2020-2024 (post-pandemia)":1.4
+  },
+  {
+    "pais":"Estados Unidos",
+    "2014-2019 (pre-pandemia)":1.56,
+    "2020-2024 (post-pandemia)":4.2
+  },
+  {
+    "pais":"Panamá",
+    "2014-2019 (pre-pandemia)":0.8,
+    "2020-2024 (post-pandemia)":1.02
+  },
+  {
+    "pais":"Perú",
+    "2014-2019 (pre-pandemia)":2.85,
+    "2020-2024 (post-pandemia)":4.61
+  }
+]

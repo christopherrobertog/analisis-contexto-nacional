@@ -1,0 +1,9 @@
+{
+  "modelo":"inflacion_ecuador ~ inflacion_eeuu",
+  "n_obs":11,
+  "pendiente_beta":0.097,
+  "intercepto":1.255,
+  "r_cuadrado":0.017,
+  "p_valor":0.6991,
+  "error_estandar":0.244
+}
