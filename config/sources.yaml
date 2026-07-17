@@ -1,0 +1,67 @@
+sources:
+  - name: "Inflation, consumer prices (annual %)"
+    institution: "World Bank (Banco Mundial)"
+    indicator_code: "FP.CPI.TOTL.ZG"
+    url: "https://api.worldbank.org/v2/country/ECU;USA;PER;PAN;LAC/indicator/FP.CPI.TOTL.ZG?date=2014:2024&format=json"
+    variable: "inflacion_precios_consumidor"
+    unit: "% anual"
+    periodicity: "Anual"
+    coverage: "2014-2024"
+    countries: ["Ecuador", "Estados Unidos", "Perú", "Panamá", "América Latina y el Caribe (excl. altos ingresos)"]
+    query_date: "2026-07-16"
+    license: "CC BY 4.0"
+    local_file: "data/raw/worldbank_inflation_raw.json"
+
+  - name: "GDP growth (annual %)"
+    institution: "World Bank (Banco Mundial)"
+    indicator_code: "NY.GDP.MKTP.KD.ZG"
+    url: "https://api.worldbank.org/v2/country/ECU;USA;PER;PAN;LAC/indicator/NY.GDP.MKTP.KD.ZG?date=2014:2024&format=json"
+    variable: "crecimiento_pib"
+    unit: "% anual"
+    periodicity: "Anual"
+    coverage: "2014-2024"
+    countries: ["Ecuador", "Estados Unidos", "Perú", "Panamá", "América Latina y el Caribe (excl. altos ingresos)"]
+    query_date: "2026-07-16"
+    license: "CC BY 4.0"
+    local_file: "data/raw/worldbank_gdp_growth_raw.json"
+
+  - name: "Unemployment, total (% of total labor force)"
+    institution: "World Bank (Banco Mundial) — modeled ILO estimate"
+    indicator_code: "SL.UEM.TOTL.ZS"
+    url: "https://api.worldbank.org/v2/country/ECU;USA;PER;PAN;LAC/indicator/SL.UEM.TOTL.ZS?date=2014:2024&format=json"
+    variable: "tasa_desempleo"
+    unit: "% de la fuerza laboral total"
+    periodicity: "Anual"
+    coverage: "2014-2024"
+    countries: ["Ecuador", "Estados Unidos", "Perú", "Panamá", "América Latina y el Caribe (excl. altos ingresos)"]
+    query_date: "2026-07-16"
+    license: "CC BY 4.0"
+    local_file: "data/raw/worldbank_unemployment_raw.json"
+
+  # Fuentes de referencia metodológica/cualitativa (no extraídas de forma automatizada en esta iteración,
+  # ver README.md > Limitaciones del análisis).
+  - name: "Cifras Económicas del Ecuador"
+    institution: "Banco Central del Ecuador (BCE)"
+    indicator_code: "N/A"
+    url: "https://www.bce.fin.ec"
+    variable: "contexto_nacional_ecuador"
+    unit: "N/A"
+    periodicity: "Mensual"
+    coverage: "N/A"
+    countries: ["Ecuador"]
+    query_date: "2026-07-16"
+    license: "Uso público institucional"
+    local_file: null
+
+  - name: "Índice de Precios al Consumidor (IPC)"
+    institution: "Instituto Nacional de Estadística y Censos (INEC)"
+    indicator_code: "N/A"
+    url: "https://www.ecuadorencifras.gob.ec"
+    variable: "ipc_ecuador"
+    unit: "N/A"
+    periodicity: "Mensual"
+    coverage: "N/A"
+    countries: ["Ecuador"]
+    query_date: "2026-07-16"
+    license: "Uso público institucional"
+    local_file: null

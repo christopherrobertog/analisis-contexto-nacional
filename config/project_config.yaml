@@ -1,0 +1,25 @@
+project:
+  name: "Análisis del Contexto Nacional y Global — Inflación en Ecuador"
+  topic: "Inflación nacional e internacional"
+  country_focus: "Ecuador"
+  reference_countries: ["Estados Unidos", "Perú", "Panamá", "América Latina y el Caribe"]
+  period:
+    start_year: 2014
+    end_year: 2024
+  indicators:
+    - id: "FP.CPI.TOTL.ZG"
+      label: "Inflación (precios al consumidor, % anual)"
+    - id: "NY.GDP.MKTP.KD.ZG"
+      label: "Crecimiento del PIB (% anual)"
+    - id: "SL.UEM.TOTL.ZS"
+      label: "Tasa de desempleo (% de la fuerza laboral)"
+  data_source:
+    primary: "World Bank Open Data API"
+    base_url: "https://api.worldbank.org/v2"
+  outputs:
+    processed_dataset: "data/processed/inflacion_pib_desempleo.csv"
+    report_pdf: "docs/informe_final.pdf"
+    dashboard_dir: "dashboard"
+  deployment:
+    dashboard_platform: "Vercel"
+    repo_platform: "GitHub"

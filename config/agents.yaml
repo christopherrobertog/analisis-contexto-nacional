@@ -1,0 +1,82 @@
+agents:
+  coordinator:
+    role: "Coordinador general"
+    goal: "Gestionar el flujo completo del análisis de inflación de Ecuador en contexto internacional"
+    file: "agents/coordinator.md"
+    tools:
+      - task_manager
+      - file_reader
+      - report_validator
+
+  source_agent:
+    role: "Especialista en fuentes"
+    goal: "Localizar y verificar datos oficiales nacionales e internacionales de inflación, PIB y desempleo"
+    file: "agents/source_agent.md"
+    tools:
+      - web_search
+      - api_reader
+      - source_registry
+    subagents:
+      - national_data_subagent
+      - international_data_subagent
+      - literature_subagent
+
+  data_agent:
+    role: "Especialista en recopilación de datos"
+    goal: "Descargar y organizar los datos crudos con metadatos completos"
+    file: "agents/data_agent.md"
+    tools:
+      - api_reader
+      - file_writer
+    subagents:
+      - cleaning_subagent
+
+  validation_agent:
+    role: "Especialista en calidad de datos"
+    goal: "Detectar y documentar faltantes, duplicados, atípicos e inconsistencias"
+    file: "agents/validation_agent.md"
+    tools:
+      - data_profiler
+      - anomaly_detector
+
+  economic_analysis_agent:
+    role: "Analista económico"
+    goal: "Calcular indicadores comparativos e interpretar tendencias económicas"
+    file: "agents/economic_analysis_agent.md"
+    tools:
+      - indicator_calculator
+
+  econometric_agent:
+    role: "Especialista econométrico/estadístico"
+    goal: "Aplicar estadística descriptiva, correlación, regresión y series de tiempo con interpretación económica"
+    file: "agents/econometric_agent.md"
+    tools:
+      - stats_engine
+      - regression_engine
+
+  visualization_agent:
+    role: "Especialista en visualización de datos"
+    goal: "Diseñar gráficos y tablas claras para el dashboard"
+    file: "agents/visualization_agent.md"
+    tools:
+      - chart_builder
+    subagents:
+      - charts_subagent
+
+  report_agent:
+    role: "Redactor académico"
+    goal: "Elaborar el informe final en PDF con coherencia académica"
+    file: "agents/report_agent.md"
+    tools:
+      - pdf_generator
+      - style_checker
+    subagents:
+      - references_subagent
+
+  audit_agent:
+    role: "Auditor de calidad del proyecto"
+    goal: "Verificar trazabilidad, coherencia, estructura y ausencia de datos inventados o credenciales expuestas"
+    file: "agents/audit_agent.md"
+    tools:
+      - file_reader
+      - report_validator
