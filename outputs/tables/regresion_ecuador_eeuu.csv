@@ -1,0 +1,2 @@
+modelo,n_obs,pendiente_beta,intercepto,r_cuadrado,p_valor,error_estandar
+inflacion_ecuador ~ inflacion_eeuu,11,0.097,1.255,0.017,0.6991,0.244

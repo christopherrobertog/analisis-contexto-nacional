@@ -1,0 +1,6 @@
+pais,n_obs,corr_inflacion_pib,p_valor_inflacion_pib,corr_inflacion_desempleo,p_valor_inflacion_desempleo
+América Latina y el Caribe,11,0.54,0.087,-0.332,0.318
+Ecuador,11,0.213,0.529,-0.482,0.133
+Estados Unidos,11,0.353,0.287,-0.437,0.18
+Panamá,11,0.754,0.007,-0.399,0.224
+Perú,11,0.153,0.654,-0.004,0.991
