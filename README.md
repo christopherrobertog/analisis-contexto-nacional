@@ -102,7 +102,7 @@ npm run dev
 
 ## Enlaces
 
-- **Dashboard (Vercel):** [pendiente de despliegue — ver `docs/despliegue_vercel.md`]
+- **Dashboard (Vercel):** [analisis-contexto-nacional.vercel.app](https://analisis-contexto-nacional.vercel.app/)
 - **Informe PDF:** [`docs/informe_final.pdf`](docs/informe_final.pdf)
 - **Repositorio GitHub:** [github.com/christopherrobertog/analisis-contexto-nacional](https://github.com/christopherrobertog/analisis-contexto-nacional)
 
