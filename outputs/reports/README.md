@@ -1,0 +1,1 @@
+El reporte completo y los hallazgos viven en `docs/informe_final.pdf` (copia disponible en este directorio) y dentro del dashboard interactivo (`dashboard/public/informe_final.pdf`).

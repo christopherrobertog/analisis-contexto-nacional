@@ -126,7 +126,10 @@ def build_pdf() -> None:
     pdf.ln(20)
     pdf.set_font("Helvetica", "", 11)
     pdf.multi_cell(0, 6, "Economia - Octavo Semestre\nAsignatura: Analisis del Contexto Nacional y Global\nProyecto multiagentico de analisis economico", align="C")
-    pdf.ln(30)
+    pdf.ln(10)
+    pdf.set_font("Helvetica", "B", 11)
+    pdf.multi_cell(0, 6, "Integrantes:\nGuillen Aldas Christopher Roberto\nAguinda Alvarado Maritza Karla", align="C")
+    pdf.ln(14)
     pdf.set_font("Helvetica", "I", 9)
     pdf.multi_cell(0, 5, "Quito, Ecuador - 2026", align="C")
 
@@ -203,6 +206,29 @@ def build_pdf() -> None:
         "sin asumir a priori que debe cumplirse."
     )
 
+    h2(pdf, "4.1 Antecedentes historicos: de la crisis de 1999 a la dolarizacion")
+    body(
+        pdf,
+        "Para comprender por que Ecuador opera bajo este regimen es necesario recordar el contexto que lo origino. "
+        "Entre 1998 y 1999, Ecuador atraveso una de las crisis economicas mas severas de su historia reciente: una "
+        "combinacion de choques externos (caida del precio del petroleo, fenomeno de El Nino, crisis financiera "
+        "asiatica y rusa que restringio el acceso a capitales) y de debilidades internas (fragilidad del sistema "
+        "bancario, deficit fiscal persistente) desencadeno una corrida bancaria, el congelamiento de depositos "
+        "('feriado bancario') y una hiperinflacion que en 1999 alcanzo alrededor del 60% anual, con una devaluacion "
+        "del sucre superior al 100% frente al dolar en pocos meses. En enero del 2000, el gobierno de la epoca "
+        "adopto la dolarizacion oficial como medida de emergencia para detener la perdida de valor de la moneda "
+        "domestica y restablecer la confianza en el sistema de pagos. Este origen es relevante para el analisis "
+        "de este estudio porque explica por que, pese a las restricciones que impone en terminos de politica "
+        "monetaria (seccion 4), la dolarizacion mantiene un respaldo social y politico amplio en Ecuador: se la "
+        "percibe, ante todo, como una garantia de estabilidad de precios frente a episodios historicos de perdida "
+        "de valor de la moneda, mas que como una eleccion optima de diseno de politica economica en el sentido "
+        "tecnico de la teoria de areas monetarias optimas. Los resultados de baja inflacion promedio 2014-2024 "
+        "reportados en la seccion 10.1 deben leerse, por tanto, en contraste con la memoria historica de la "
+        "inflacion pre-dolarizacion, que alcanzo niveles de dos y tres digitos anuales en varios anos de la decada "
+        "de 1990, un orden de magnitud muy superior al de cualquier observacion del periodo analizado en este "
+        "informe."
+    )
+
     # Contexto nacional
     h1(pdf, "5. Contexto Nacional (Ecuador)")
     body(
@@ -231,6 +257,75 @@ def build_pdf() -> None:
         "expansivo, cuellos de botella logisticos globales y posterior endurecimiento de la politica monetaria de "
         "la Reserva Federal. El promedio de America Latina y el Caribe siguio un patron similar, alcanzando 8.81% "
         "en 2022, el valor mas alto de toda la serie regional 2014-2024 utilizada en este estudio."
+    )
+
+    h2(pdf, "6.1 El canal petrolero y de materias primas")
+    body(
+        pdf,
+        "Ecuador es una economia primario-exportadora en la que el petroleo representa una parte sustancial de "
+        "los ingresos fiscales y de las exportaciones totales. Este hecho estructural introduce una asimetria "
+        "relevante para interpretar el contexto global: los mismos choques de precios de materias primas que "
+        "elevan la inflacion importada de bienes de consumo (via combustibles, fertilizantes e insumos "
+        "industriales cotizados en dolares) tambien mejoran, en episodios de precios altos del petroleo, los "
+        "terminos de intercambio y el espacio fiscal del pais. En 2021-2022, el alza simultanea del precio "
+        "internacional del petroleo y de los precios de los bienes importados genero un efecto ambivalente: mayor "
+        "presion inflacionaria de corto plazo por el lado de los costos, pero tambien mayores ingresos petroleros "
+        "que permitieron sostener subsidios a los combustibles y amortiguar parcialmente el traspaso de precios "
+        "internacionales hacia el consumidor final. Este mecanismo de subsidio, no observable directamente en las "
+        "series de inflacion agregada del Banco Mundial utilizadas en este estudio, es una de las razones "
+        "plausibles por las que el pico inflacionario ecuatoriano de 2022 (3.47%) fue notablemente menor al de "
+        "economias sin ese amortiguador fiscal."
+    )
+
+    h2(pdf, "6.2 Politica monetaria comparada: Estados Unidos, Peru y el resto de la muestra")
+    body(
+        pdf,
+        "Un elemento central del contexto global 2021-2023 fue el endurecimiento monetario coordinado de los "
+        "bancos centrales para contener el repunte inflacionario post-pandemia. La Reserva Federal de Estados "
+        "Unidos elevo su tasa de referencia desde niveles cercanos a cero hasta superar el 5% entre 2022 y 2023, "
+        "el ciclo de ajuste mas rapido en varias decadas, con el objetivo explicito de anclar las expectativas de "
+        "inflacion. Peru, unico pais de la muestra con esquema de metas de inflacion y moneda propia, respondio de "
+        "forma similar: el Banco Central de Reserva del Peru (BCRP) elevo tambien su tasa de politica monetaria "
+        "durante el mismo periodo, ejerciendo una herramienta de estabilizacion de la que Ecuador y Panama, por su "
+        "condicion de economias dolarizadas, no disponen. Esta asimetria institucional es clave para interpretar "
+        "los resultados de la seccion 10: Ecuador y Panama no pueden 'importar' una respuesta de politica "
+        "monetaria contraciclica propia ante un choque inflacionario externo, sino que dependen enteramente de la "
+        "que adopte la Reserva Federal, mientras que Peru cuenta con un grado adicional de libertad para intentar "
+        "moderar el traspaso de la inflacion externa a los precios domesticos, lo que puede explicar en parte por "
+        "que su pico de 2022 (8.33%), aunque el mas alto de la muestra, se modero mas rapidamente en los anos "
+        "siguientes que lo que habria ocurrido sin una respuesta de tasas de interes propia."
+    )
+
+    h2(pdf, "6.3 Migracion, remesas y demanda agregada")
+    body(
+        pdf,
+        "El contexto internacional tambien opera sobre la inflacion domestica por un canal de demanda menos "
+        "discutido en el marco conceptual tradicional de la dolarizacion: las remesas. Estados Unidos es el "
+        "principal destino de la migracion ecuatoriana y, por extension, la principal fuente de remesas "
+        "familiares que ingresan a la economia local. Un mercado laboral estadounidense dinamico (con baja tasa "
+        "de desempleo, segun los datos de esta misma base) tiende a sostener o incrementar el flujo de remesas "
+        "hacia Ecuador, lo que constituye un impulso de demanda agregada domestica adicional al canal de precios "
+        "de bienes importados. Este canal ayuda a explicar por que la relacion entre inflacion de Estados Unidos "
+        "e inflacion de Ecuador no es puramente mecanica ni deberia esperarse que sea lineal y contemporanea: "
+        "conviven un canal de oferta (precios de bienes transables) que empuja en el mismo sentido que la "
+        "inflacion estadounidense, y un canal de demanda (remesas, empleo de los migrantes) que responde con "
+        "rezago al ciclo economico de Estados Unidos y no necesariamente a su tasa de inflacion en el mismo ano."
+    )
+
+    h2(pdf, "6.4 Logistica global y economias de transito: el caso de Panama")
+    body(
+        pdf,
+        "La crisis logistica global de 2021-2022 -saturacion portuaria, escasez de contenedores y aumento "
+        "extraordinario de los fletes maritimos internacionales- afecto de manera diferenciada a las economias "
+        "de la muestra segun su rol en el comercio mundial. Panama, cuya actividad economica depende en gran "
+        "medida del transito de mercancias por el Canal de Panama y de servicios logisticos y financieros "
+        "internacionales, estuvo particularmente expuesta a esta coyuntura: por un lado, el alza de fletes y la "
+        "congestion global elevaron los costos de bienes importados; por otro, el propio auge del comercio "
+        "mundial de 2021-2022 incremento la demanda de servicios de transito y financieros panamenos, "
+        "consistente con la correlacion positiva y significativa entre inflacion y crecimiento del PIB reportada "
+        "para ese pais en la seccion 10.4. Este es un ejemplo concreto de como el contexto global no se transmite "
+        "de manera uniforme, sino que interactua con la estructura productiva especifica de cada economia de la "
+        "muestra."
     )
 
     # Fuentes y metodologia
@@ -409,6 +504,85 @@ def build_pdf() -> None:
         "macroeconomica reciente."
     )
 
+    h2(pdf, "12.1 Por que la regresion Ecuador-Estados Unidos arroja un R2 tan bajo")
+    body(
+        pdf,
+        "El resultado de la seccion 10.5 (R2=0.017, no significativo) puede parecer contraintuitivo frente a la "
+        "hipotesis de inflacion importada expuesta en el marco conceptual, pero es consistente con al menos tres "
+        "limitaciones metodologicas propias del diseno de este estudio, mas que con una refutacion definitiva de "
+        "la hipotesis. Primero, la agregacion anual de los datos del Banco Mundial diluye la dinamica de corto "
+        "plazo: la literatura sobre transmision de precios (exchange-rate y cost pass-through) documenta "
+        "tipicamente rezagos de tres a doce meses entre un choque de precios en la economia ancla y su traspaso "
+        "completo a la economia dolarizada; al promediar en periodos de doce meses, una regresion contemporanea "
+        "anio-a-anio puede no capturar ese desfase temporal y subestimar severamente la relacion real. Segundo, "
+        "el canal fiscal descrito en la seccion 6.1 (subsidios a combustibles financiados con ingresos "
+        "petroleros) actua como un amortiguador discrecional que rompe, en la practica, la relacion mecanica "
+        "entre precios internacionales y precios domesticos en los anios en que el gobierno ecuatoriano tuvo "
+        "espacio fiscal para sostenerlo, y la deja operar con mas fuerza en los anios en que no lo tuvo, "
+        "introduciendo una no linealidad que una regresion lineal simple no puede capturar. Tercero, el tamano de "
+        "muestra (n=11 observaciones anuales) es demasiado pequeno para estimar con precision una relacion que, "
+        "de existir, es probablemente moderada y no determinista: con tan pocos grados de libertad, el poder "
+        "estadistico de la prueba es bajo y un R2 pequeno no puede interpretarse como evidencia solida de ausencia "
+        "de relacion, solo como ausencia de evidencia suficiente para confirmarla con este diseno."
+    )
+
+    h2(pdf, "12.2 El valor de comparar economias con y sin politica monetaria propia")
+    body(
+        pdf,
+        "El contraste entre Peru (moneda propia, metas de inflacion) y el par Ecuador-Panama (dolarizadas) "
+        "descrito en la seccion 6.2 aporta una segunda capa de interpretacion a los resultados de estadistica "
+        "descriptiva de la seccion 10.1. No es solo que Peru muestre mayor inflacion promedio y mayor volatilidad: "
+        "es que Peru dispone de un instrumento -la tasa de interes de referencia del BCRP- que Ecuador y Panama no "
+        "tienen, y que le permite, al menos en principio, moderar activamente el traspaso de choques externos "
+        "hacia los precios domesticos. Que aun asi Peru muestre mayor volatilidad sugiere que ese instrumento no "
+        "opera de forma instantanea ni perfecta, y que los choques de oferta global de 2021-2022 fueron de una "
+        "magnitud que incluso una politica monetaria activa tuvo dificultades para contener por completo. Para "
+        "Ecuador, la ausencia de este instrumento no se tradujo en una mayor inflacion o volatilidad relativa en "
+        "este periodo especifico, lo que podria interpretarse -con cautela- como evidencia de que, en un contexto "
+        "de estabilidad de precios como el observado en 2014-2024, el costo de no tener politica monetaria propia "
+        "fue relativamente bajo; esta conclusion podria no sostenerse en un escenario de choques mas severos o "
+        "prolongados, para el cual el margen de maniobra fiscal (unico instrumento disponible en una economia "
+        "dolarizada) podria resultar insuficiente."
+    )
+
+    h2(pdf, "12.3 Implicancias para el diseno de politica economica")
+    body(
+        pdf,
+        "Tomados en conjunto, estos resultados sugieren que la disciplina de precios observada en Ecuador durante "
+        "2014-2024 no deberia atribuirse unicamente al mecanismo automatico de la dolarizacion, sino tambien a "
+        "decisiones de politica fiscal discrecional (particularmente subsidios energeticos) que amortiguaron los "
+        "choques externos en los momentos de mayor tension internacional. Esto tiene una implicancia practica "
+        "relevante: la sostenibilidad de la estabilidad de precios ecuatoriana en el futuro depende, en buena "
+        "medida, de que el espacio fiscal para sostener ese tipo de amortiguadores se mantenga disponible, lo cual "
+        "no esta garantizado ante un escenario de precios del petroleo mas bajos o de mayor restriccion de "
+        "financiamiento publico. En otras palabras, la ausencia de politica monetaria propia traslada el peso del "
+        "ajuste macroeconomico hacia la politica fiscal de forma mas directa de lo que sugiere una lectura "
+        "superficial de las cifras de inflacion agregada, y esa es precisamente la fragilidad estructural que "
+        "este estudio identifica como el principal riesgo a monitorear hacia adelante."
+    )
+
+    h2(pdf, "12.4 Agenda de investigacion futura")
+    body(
+        pdf,
+        "Las limitaciones metodologicas identificadas en las secciones 12.1 y 16 abren una agenda concreta para "
+        "profundizar este analisis. En primer lugar, reemplazar la serie anual del Banco Mundial por series "
+        "mensuales oficiales del Banco Central del Ecuador y del Instituto Nacional de Estadistica y Censos "
+        "permitiria estimar modelos con rezagos explicitos (por ejemplo, un modelo de rezagos distribuidos o un "
+        "vector autorregresivo, VAR) que capturen el tiempo de traspaso entre la inflacion de Estados Unidos y la "
+        "de Ecuador, en lugar de asumir una relacion contemporanea. En segundo lugar, incorporar como variables "
+        "de control el precio internacional del petroleo (WTI o Brent), el gasto publico en subsidios "
+        "energeticos y el volumen de remesas recibidas permitiria separar el canal de costos del canal fiscal y "
+        "del canal de demanda descritos en la seccion 6, en lugar de atribuir todo el residuo no explicado a "
+        "'ruido' estadistico. En tercer lugar, una prueba formal de quiebre estructural (por ejemplo, un test de "
+        "Chow o de Bai-Perron) alrededor de 2020 permitiria confirmar de manera rigurosa si la relacion entre "
+        "ambas series de inflacion cambio de naturaleza antes y despues de la pandemia, en lugar de inferirlo "
+        "unicamente de la comparacion de promedios de la seccion 10.2. Finalmente, ampliar la muestra de paises "
+        "dolarizados o con regimenes cambiarios fijos (Panama, El Salvador, y con matices, paises con caja de "
+        "conversion) permitiria distinguir que parte de los resultados observados para Ecuador es atribuible "
+        "especificamente a su regimen monetario y que parte responde a caracteristicas idiosincrasicas de su "
+        "economia, como la dependencia petrolera o el tamano relativo de su sector publico."
+    )
+
     # Riesgos y oportunidades
     h1(pdf, "13. Riesgos y Oportunidades para Ecuador")
     h2(pdf, "Riesgos")
@@ -435,6 +609,28 @@ def build_pdf() -> None:
         "de remesas, al no existir riesgo de devaluacion frente a esa moneda.",
     ]:
         bullet(pdf, o)
+
+    h2(pdf, "13.1 Escenarios de riesgo hacia adelante")
+    body(
+        pdf,
+        "A partir de los mecanismos identificados en las secciones 6 y 12, es posible esbozar tres escenarios "
+        "cualitativos relevantes para la sostenibilidad de la estabilidad de precios ecuatoriana. Primero, un "
+        "escenario de caida prolongada del precio internacional del petroleo reduciria el espacio fiscal "
+        "disponible para sostener subsidios energeticos (seccion 6.1), lo que expondria a los precios domesticos "
+        "de forma mas directa a la volatilidad de los precios internacionales de combustibles, con un traspaso "
+        "probablemente mayor al observado en el periodo 2014-2024. Segundo, un ciclo de apreciacion sostenida del "
+        "dolar estadounidense frente a las monedas de los principales socios comerciales no dolarizados de "
+        "Ecuador (incluido Peru) encarece las exportaciones ecuatorianas no petroleras en esos mercados, con "
+        "efectos negativos sobre la balanza comercial y, por esa via, sobre la disponibilidad de divisas que "
+        "sostiene el propio esquema de dolarizacion. Tercero, un endurecimiento monetario mas prolongado o mas "
+        "abrupto de la Reserva Federal que el observado en 2022-2023 se transmitiria integramente a las "
+        "condiciones financieras domesticas ecuatorianas (tasas de interes, costo del credito) sin que exista un "
+        "banco central nacional capaz de moderar ese traspaso, a diferencia de lo que puede hacer, al menos "
+        "parcialmente, el Banco Central de Reserva del Peru. Estos tres escenarios comparten un mismo denominador: "
+        "en ausencia de politica monetaria propia, la principal linea de defensa de Ecuador ante choques externos "
+        "adversos es la disciplina fiscal y la diversificacion productiva, no un instrumento monetario que "
+        "simplemente no existe en este regimen."
+    )
 
     # Conclusiones
     pdf.add_page()
@@ -470,7 +666,7 @@ def build_pdf() -> None:
         "Se utilizan series anuales (Banco Mundial); no se incorporan series mensuales oficiales de INEC/BCE.",
         "El tamano de muestra (n=11 anos) limita la robustez estadistica de correlaciones y regresiones.",
         "El modelo de regresion no controla por variables omitidas relevantes (petroleo, remesas, gasto publico).",
-        "Trabajo de alcance individual adaptado del formato grupal original de la consigna.",
+        "Grupo de 2 integrantes, por debajo del minimo de 3 solicitado en la consigna original.",
     ]:
         bullet(pdf, lim)
 
@@ -539,6 +735,18 @@ def build_pdf() -> None:
         ("Agente de Visualizacion", "Diseña graficos y tablas del dashboard."),
         ("Agente Redactor", "Elabora el informe academico final en PDF."),
         ("Agente Auditor", "Revisa trazabilidad, coherencia, estructura y ausencia de datos inventados."),
+    ]:
+        bullet(pdf, f"{nombre}: {rol}")
+
+    pdf.ln(2)
+    h2(pdf, "Subagentes")
+    for nombre, rol in [
+        ("Subagente de Datos Nacionales", "Localiza fuentes oficiales ecuatorianas de inflacion, PIB y desempleo (INEC, BCE)."),
+        ("Subagente de Datos Internacionales", "Descarga series comparables de EE.UU., Peru, Panama y America Latina y el Caribe via World Bank API."),
+        ("Subagente de Revision de Literatura", "Reune el marco conceptual: dolarizacion, areas monetarias optimas, inflacion importada."),
+        ("Subagente de Limpieza", "Convierte la respuesta JSON cruda en un DataFrame tabular homogeneo previo a la validacion."),
+        ("Subagente de Graficos", "Define la especificacion tecnica de cada grafico del dashboard (tipo, ejes, interpretacion)."),
+        ("Subagente de Referencias", "Gestiona las citas bibliograficas del informe final en formato APA 7."),
     ]:
         bullet(pdf, f"{nombre}: {rol}")
 

@@ -1,0 +1,20 @@
+{
+  "variable": "tasa_desempleo",
+  "nombre_indicador": "Unemployment, total (% of total labor force)",
+  "institucion": "World Bank (Banco Mundial) — modeled ILO estimate",
+  "codigo_indicador": "SL.UEM.TOTL.ZS",
+  "url_fuente": "https://api.worldbank.org/v2/country/ECU;USA;PER;PAN;LAC/indicator/SL.UEM.TOTL.ZS?date=2014:2024&format=json",
+  "unidad": "% de la fuerza laboral total",
+  "periodicidad": "Anual",
+  "cobertura_temporal": "2014-2024",
+  "paises": [
+    "Ecuador",
+    "Estados Unidos",
+    "Perú",
+    "Panamá",
+    "América Latina y el Caribe (excl. altos ingresos)"
+  ],
+  "fecha_consulta": "2026-07-16",
+  "licencia": "CC BY 4.0",
+  "archivo_local_crudo": "data/raw/worldbank_unemployment_raw.json"
+}

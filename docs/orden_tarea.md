@@ -3,7 +3,7 @@
 - **Carrera:** Economía
 - **Nivel:** Octavo semestre
 - **Asignatura:** Análisis del Contexto Nacional y Global
-- **Modalidad:** Trabajo autónomo grupal (adaptado a ejecución individual — ver `README.md`, sección "Limitaciones del análisis")
+- **Modalidad:** Trabajo autónomo grupal (grupo de 2 integrantes; la consigna original pide entre 3 y 5 — ver `README.md`, sección "Limitaciones del análisis")
 - **Producto integrador:** Proyecto multiagéntico para el análisis del contexto económico nacional y global
 - **Herramientas obligatorias:** Visual Studio Code, GitHub, Vercel y generador de documentos PDF
 

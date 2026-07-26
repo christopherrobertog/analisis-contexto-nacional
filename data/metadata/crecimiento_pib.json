@@ -1,0 +1,20 @@
+{
+  "variable": "crecimiento_pib",
+  "nombre_indicador": "GDP growth (annual %)",
+  "institucion": "World Bank (Banco Mundial)",
+  "codigo_indicador": "NY.GDP.MKTP.KD.ZG",
+  "url_fuente": "https://api.worldbank.org/v2/country/ECU;USA;PER;PAN;LAC/indicator/NY.GDP.MKTP.KD.ZG?date=2014:2024&format=json",
+  "unidad": "% anual",
+  "periodicidad": "Anual",
+  "cobertura_temporal": "2014-2024",
+  "paises": [
+    "Ecuador",
+    "Estados Unidos",
+    "Perú",
+    "Panamá",
+    "América Latina y el Caribe (excl. altos ingresos)"
+  ],
+  "fecha_consulta": "2026-07-16",
+  "licencia": "CC BY 4.0",
+  "archivo_local_crudo": "data/raw/worldbank_gdp_growth_raw.json"
+}

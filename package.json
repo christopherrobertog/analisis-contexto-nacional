@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Proyecto multiagentico para el analisis del contexto economico nacional y global - Inflacion en Ecuador",
+  "author": "Guillén Aldás Christopher Roberto, Aguinda Alvarado Maritza Karla",
   "scripts": {
     "dashboard:install": "npm install --prefix dashboard",
     "dashboard:dev": "npm run dev --prefix dashboard",

@@ -4,9 +4,10 @@ Proyecto multiagéntico para el análisis del contexto económico nacional y glo
 
 ## Integrantes
 
-> Trabajo elaborado de forma individual (ajustar esta sección con los nombres reales del grupo antes de la entrega).
+- Guillén Aldás Christopher Roberto — rol: coordinación, análisis económico y desarrollo del proyecto.
+- Aguinda Alvarado Maritza Karla — rol: recopilación y validación de datos, redacción del informe.
 
-- [Nombre Apellido] — rol: coordinación, análisis y desarrollo integral del proyecto.
+> Nota: la orden de tarea solicita grupos de 3 a 5 integrantes; este equipo se conformó con 2. Ajustar esta sección si se incorpora un tercer integrante antes de la entrega.
 
 ## Problema analizado
 
@@ -103,7 +104,7 @@ npm run dev
 
 - **Dashboard (Vercel):** [pendiente de despliegue — ver `docs/despliegue_vercel.md`]
 - **Informe PDF:** [`docs/informe_final.pdf`](docs/informe_final.pdf)
-- **Repositorio GitHub:** [pendiente de publicación]
+- **Repositorio GitHub:** [github.com/christopherguillenXd/analisis-contexto-nacional](https://github.com/christopherguillenXd/analisis-contexto-nacional)
 
 ## Resultados principales
 
@@ -119,7 +120,7 @@ npm run dev
 - Se utilizan series **anuales** del Banco Mundial; no se incorporan series mensuales oficiales de INEC/BCE por restricciones de acceso automatizado a esas fuentes dentro del alcance de esta entrega.
 - El período 2014-2024 puede no capturar completamente ciclos económicos de mayor duración.
 - La relación entre inflación, crecimiento y desempleo se explora mediante correlación y regresión simple; no se controla por variables omitidas (precio del petróleo, remesas, gasto público).
-- Este es un trabajo de alcance individual adaptado del formato grupal original; el historial de commits refleja un único autor.
+- Este trabajo se realizó en un grupo de 2 integrantes, por debajo del mínimo de 3 solicitado en la consigna original; el historial de commits deberá reflejar contribuciones identificables de ambos integrantes.
 
 ## Licencia
 

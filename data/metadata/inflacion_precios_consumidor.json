@@ -1,0 +1,20 @@
+{
+  "variable": "inflacion_precios_consumidor",
+  "nombre_indicador": "Inflation, consumer prices (annual %)",
+  "institucion": "World Bank (Banco Mundial)",
+  "codigo_indicador": "FP.CPI.TOTL.ZG",
+  "url_fuente": "https://api.worldbank.org/v2/country/ECU;USA;PER;PAN;LAC/indicator/FP.CPI.TOTL.ZG?date=2014:2024&format=json",
+  "unidad": "% anual",
+  "periodicidad": "Anual",
+  "cobertura_temporal": "2014-2024",
+  "paises": [
+    "Ecuador",
+    "Estados Unidos",
+    "Perú",
+    "Panamá",
+    "América Latina y el Caribe (excl. altos ingresos)"
+  ],
+  "fecha_consulta": "2026-07-16",
+  "licencia": "CC BY 4.0",
+  "archivo_local_crudo": "data/raw/worldbank_inflation_raw.json"
+}
