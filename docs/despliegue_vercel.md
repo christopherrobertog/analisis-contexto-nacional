@@ -18,7 +18,7 @@ Si `npm run build` falla, corrige los errores antes de continuar — Vercel ejec
 
 1. Entra a https://vercel.com y accede con tu cuenta de GitHub.
 2. "Add New..." → "Project".
-3. Selecciona el repositorio `analisis-inflacion-ecuador`.
+3. Selecciona el repositorio `analisis-contexto-nacional`.
 4. En **"Configure Project"**:
    - **Root Directory:** `dashboard` (¡importante! el proyecto Next.js vive en esa subcarpeta, no en la raíz del repositorio).
    - **Framework Preset:** Next.js (se detecta automáticamente al fijar el Root Directory).

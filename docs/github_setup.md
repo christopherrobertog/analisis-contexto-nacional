@@ -5,7 +5,7 @@ Estos pasos deben ejecutarse manualmente desde tu cuenta de GitHub (requieren tu
 ## 1. Crear el repositorio
 
 1. Entra a https://github.com/new
-2. Nombre sugerido: `analisis-inflacion-ecuador` (relacionado con el tema, según el requisito de la orden de tarea).
+2. Nombre sugerido: `analisis-contexto-nacional` (relacionado con el tema, según el requisito de la orden de tarea).
 3. Visibilidad: **Público** (salvo indicación distinta del docente).
 4. **No** marques "Initialize with README" (el proyecto ya tiene uno).
 5. Crea el repositorio.
@@ -20,7 +20,7 @@ git add README.md LICENSE .gitignore .env.example package.json requirements.txt 
 git commit -m "docs: estructura inicial del proyecto y arquitectura multiagentica"
 
 git branch -M main
-git remote add origin https://github.com/<tu-usuario>/analisis-inflacion-ecuador.git
+git remote add origin https://github.com/<tu-usuario>/analisis-contexto-nacional.git
 git push -u origin main
 ```
 

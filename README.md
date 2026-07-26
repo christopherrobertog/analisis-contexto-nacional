@@ -104,7 +104,7 @@ npm run dev
 
 - **Dashboard (Vercel):** [pendiente de despliegue — ver `docs/despliegue_vercel.md`]
 - **Informe PDF:** [`docs/informe_final.pdf`](docs/informe_final.pdf)
-- **Repositorio GitHub:** [github.com/christopherguillenXd/analisis-contexto-nacional](https://github.com/christopherguillenXd/analisis-contexto-nacional)
+- **Repositorio GitHub:** [github.com/christopherrobertog/analisis-contexto-nacional](https://github.com/christopherrobertog/analisis-contexto-nacional)
 
 ## Resultados principales
 

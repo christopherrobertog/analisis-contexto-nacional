@@ -48,7 +48,7 @@ export default function Home() {
           <a className="link-button primary" href="/informe_final.pdf" target="_blank" rel="noreferrer">
             Descargar informe PDF
           </a>
-          <a className="link-button" href="https://github.com/christopherguillenXd/analisis-contexto-nacional" target="_blank" rel="noreferrer">
+          <a className="link-button" href="https://github.com/christopherrobertog/analisis-contexto-nacional" target="_blank" rel="noreferrer">
             Ver repositorio en GitHub
           </a>
         </div>
