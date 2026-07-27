@@ -4,4 +4,5 @@ numpy>=2.1
 scipy>=1.14
 fpdf2>=2.8
 matplotlib>=3.9
+pypdf>=6.0
 pytest>=8.3
