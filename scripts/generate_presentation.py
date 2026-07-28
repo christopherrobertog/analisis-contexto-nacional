@@ -19,6 +19,19 @@ OUTPUT_PATH = ROOT / "docs" / "presentacion_resultados.pdf"
 
 MARGIN = 15
 
+# Enlaces por integrante, para generar una version personalizada de la
+# diapositiva final segun quien vaya a presentar/entregar el documento.
+ENLACES = {
+    "christopher": {
+        "repo": "github.com/christopherrobertog/analisis-contexto-nacional",
+        "vercel": "analisis-contexto-nacional.vercel.app",
+    },
+    "maritza": {
+        "repo": "github.com/maritzaaguinda8564-a11y/analisis-contexto--nacional",
+        "vercel": "analisis-contexto-nacional-two.vercel.app",
+    },
+}
+
 
 class SlidePDF(FPDF):
     def footer(self) -> None:
@@ -54,7 +67,9 @@ def load_table(name: str) -> pd.DataFrame:
     return pd.read_csv(TABLES_DIR / name)
 
 
-def build_pdf() -> None:
+def build_pdf(quien: str = "christopher", output_path: Path | None = None) -> None:
+    enlaces = ENLACES[quien]
+    output_path = output_path or OUTPUT_PATH
     pdf = SlidePDF(orientation="L", format="A4")
     pdf.set_auto_page_break(auto=True, margin=16)
     pdf.set_margins(MARGIN, 14, MARGIN)
@@ -139,14 +154,20 @@ def build_pdf() -> None:
 
     # 9. Enlaces
     title_slide(pdf, "Enlaces", "Producto entregado")
-    bullet(pdf, "Repositorio GitHub: github.com/christopherrobertog/analisis-contexto-nacional", size=13)
-    bullet(pdf, "Dashboard en Vercel: analisis-contexto-nacional.vercel.app", size=13)
+    bullet(pdf, f"Repositorio GitHub: {enlaces['repo']}", size=13)
+    bullet(pdf, f"Dashboard en Vercel: {enlaces['vercel']}", size=13)
     bullet(pdf, "Informe completo en PDF: docs/informe_final.pdf", size=13)
 
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    pdf.output(str(OUTPUT_PATH))
-    print(f"[OK] Presentacion generada en {OUTPUT_PATH} ({pdf.page_no()} paginas)")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    pdf.output(str(output_path))
+    print(f"[OK] Presentacion generada en {output_path} ({pdf.page_no()} paginas)")
 
 
 if __name__ == "__main__":
-    build_pdf()
+    import sys
+
+    quien = sys.argv[1] if len(sys.argv) > 1 else "christopher"
+    output_path = ROOT / "docs" / (
+        "presentacion_resultados.pdf" if quien == "christopher" else f"presentacion_resultados_{quien}.pdf"
+    )
+    build_pdf(quien=quien, output_path=output_path)
